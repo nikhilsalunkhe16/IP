@@ -8,6 +8,18 @@
 </head>
 </head>
 <body>
+      <p id="demo"></p>
+    <script>
+        function loginfunc(){
+            var txt;
+            if (confirm("Login as faculty")) {
+                txt="You have login as Faculty";
+            } else{
+                txt="You have cancel!";
+            }
+  document.getElementById("demo").innerHTML = txt;
+}    
+    </script>
     <div class="center">
         <h1>Faculty Login</h1>
         <form action="faculty_login.php" method="post">
